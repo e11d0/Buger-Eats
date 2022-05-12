@@ -1,0 +1,20 @@
+{
+  "name": "buger-eats",
+  "version": "1.0.0",
+  "description": "Projeto teste de aceitacao",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "keywords": [
+    "e11d"
+  ],
+  "author": "e11d",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.6.1",
+    "cypress-file-upload": "^5.0.8",
+    "faker": "^5.5.3",
+    "gerador-validador-cpf": "^5.0.2"
+  }
+}
