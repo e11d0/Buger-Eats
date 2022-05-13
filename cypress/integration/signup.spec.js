@@ -13,8 +13,6 @@ describe('Signup', () => {
     })
     //primeiro caso de teste
     it('CT001_User should be deliver', function () {
-        //executa a funcao go, que faz a validacado da tela incial e o ajuste da resolucao da tela
-        //signup.go();
         //criando uma isntancia da massa de teste
         var deliver = signupfactory.deliver();
         //chama a funcao para preencher os campos a partir da massa de teste
@@ -28,8 +26,6 @@ describe('Signup', () => {
     })
     //segundo caso de teste
     it('CT002_Invalid CPF', function () {
-        //executa a funcao go, que faz a validacado da tela incial e o ajuste da resolucao da tela
-        //signup.go();
         //criando uma instancia da massa de teste
         var deliver = signupfactory.deliver();
         //alterando o valor de 'campo' da massa
@@ -43,8 +39,6 @@ describe('Signup', () => {
     })
     //terceiro caso de teste
     it('CT003_Invalid Email', function () {
-        //executa a funcao go, que faz a validacado da tela incial e o ajuste da resolucao da tela
-        //signup.go();
         //criando uma instancia da massa de teste
         var deliver = signupfactory.deliver();
         //alterando o valor de 'campo' da massa
@@ -68,13 +62,6 @@ describe('Signup', () => {
             { field: 'delivery_method', output: 'Selecione o método de entrega' },
             { field: 'cnh', output: 'Adicione uma foto da sua CNH' }
         ]
-        //before criado para antes de inciar o teste clicar no botão de confirmar para gerar os erros de campos obrigatorios ausentes
-        //before(function () {
-        //executa a funcao go, que faz a validacado da tela incial e o ajuste da resolucao da tela
-        //  signup.go();
-        //clica no botão para confirmar o cadastro
-        //    signup.submit();
-        //})
         //executa um loop para cada campo do array de mensagens para caso algum de erro o proximo seja executando normalmente
         messages.forEach(function (msg) {
             //cada it roda como um cenario individual, só que dentro de um laço
